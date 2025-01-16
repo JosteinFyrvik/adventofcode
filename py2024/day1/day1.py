@@ -23,3 +23,4 @@ def compute(integers):
     return difference
 
 print(compute([3, 4, 4, 3, 2, 5, 1, 3, 3, 9, 3, 3]))
+# "https://adventofcode.com/2024/day/1/input"
