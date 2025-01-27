@@ -1,3 +1,20 @@
+def readintegers(filename):
+
+    with open(filename, 'r') as file:
+        file_content = file.read()
+
+    file_items = file_content.split()  
+    
+    integers = []
+
+    for x in file_items:
+        integers.append(int(x))
+    return integers
+    
+
+
+
+
 def compute(integers):
     left = []
     right = []
@@ -22,5 +39,6 @@ def compute(integers):
     
     return difference
 
-print(compute([3, 4, 4, 3, 2, 5, 1, 3, 3, 9, 3, 3]))
+# print(readintegers('py2024/day1/sample.txt'))
+print(compute(readintegers('py2024/day1/data.txt')))
 # "https://adventofcode.com/2024/day/1/input"
